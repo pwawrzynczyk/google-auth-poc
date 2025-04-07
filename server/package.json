@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy": "scp -P 60022 -r index.js package.json package-lock.json ubuntu@omnicalculator.com:~/svc/auth-test-server"
   },
   "keywords": [],
   "author": "",

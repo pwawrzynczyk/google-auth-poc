@@ -13,7 +13,8 @@
     "start": "PORT=6005 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && scp -P 60022 -r build ubuntu@omnicalculator.com:~/www/auth-test"
   },
   "eslintConfig": {
     "extends": [
